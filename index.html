@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffb6c9">
+
+    <title>Happy Birthday MilliONE 🎂</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================
+         INTRO COUNT-UP
+    ======================================================= -->
+    <section id="introScreen" class="intro-screen">
+
+        <div class="intro-glow"></div>
+
+        <p class="intro-small">A very important number is loading...</p>
+
+        <div id="countNumber" class="count-number">0</div>
+
+        <p id="countText" class="count-text">Wait for it... 👀</p>
+
+        <div class="loading-line">
+            <span id="loadingProgress"></span>
+        </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         MAIN APP
+    ======================================================= -->
+    <main id="mainApp" class="main-app hidden">
+
+        <!-- Floating decorations -->
+        <div class="floating-decor decor-1">♡</div>
+        <div class="floating-decor decor-2">✦</div>
+        <div class="floating-decor decor-3">♥</div>
+        <div class="floating-decor decor-4">✨</div>
+        <div class="floating-decor decor-5">♡</div>
+
+        <!-- ==================================================
+             BIRTHDAY HERO
+        =================================================== -->
+        <section id="heroSection" class="hero-section">
+
+            <div class="hero-glow"></div>
+
+            <div class="hero-content">
+
+                <div class="mini-badge">
+                    ✨ TODAY'S MAIN CHARACTER ✨
+                </div>
+
+                <h1 class="hero-title">
+                    HAPPY BIRTHDAY
+                    <span>MilliONE</span>
+                </h1>
+
+                <div class="hero-cake">🎂</div>
+
+                <div class="birthday-message typing-container">
+                    <p id="birthdayQuote"></p>
+                </div>
+
+                <button id="startButton" class="main-button">
+                    Let the chaos begin ✨
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- ==================================================
+             QUESTIONS
+        =================================================== -->
+        <section id="quizSection" class="quiz-section hidden">
+
+            <div class="quiz-top">
+                <div class="progress-label">
+                    QUESTION <span id="currentQuestionNumber">1</span> / 9
+                </div>
+
+                <div class="progress-bar">
+                    <span id="quizProgress"></span>
+                </div>
+            </div>
+
+            <div id="questionCard" class="question-card">
+
+                <div class="question-decoration">
+                    <span>✦</span>
+                    <span>♡</span>
+                    <span>✦</span>
+                </div>
+
+                <div id="questionIcon" class="question-icon">💌</div>
+
+                <div class="question-text-wrapper">
+                    <h2 id="questionText"></h2>
+                </div>
+
+                <p id="questionHint" class="question-hint"></p>
+
+                <div id="answerArea" class="answer-area"></div>
+
+                <div id="feedbackBox" class="feedback-box hidden">
+                    <span id="feedbackEmoji">😂</span>
+                    <p id="feedbackText"></p>
+                </div>
+
+                <button id="nextButton" class="next-button hidden">
+                    Next Question →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FINAL SCREEN
+        =================================================== -->
+        <section id="finalSection" class="final-section hidden">
+
+            <div class="final-glow"></div>
+
+            <div class="final-card">
+
+                <div class="final-stars">✦ ✧ ✦ ✧ ✦</div>
+
+                <div class="final-gift">🎁</div>
+
+                <h2>Happy Birthday</h2>
+
+                <h1>Insha</h1>
+
+                <p class="final-quote">
+                    “May you continue to grow with grace, dream with courage,
+                    laugh without limits, and turn every new chapter of your
+                    life into something extraordinary.”
+                </p>
+
+                <p class="final-subtext">
+                    Keep shining. Keep smiling. Keep being unapologetically you. 🖤✨
+                </p>
+
+                <div class="final-signature">
+                    — From someone who clearly has excellent taste in friends. 😌
+                </div>
+
+                <div class="final-hearts">
+                    🩷 🩷 🩷
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================================
+         CELEBRATION BLAST
+    ======================================================= -->
+    <div id="blastOverlay" class="blast-overlay hidden">
+
+        <div class="blast-particles"></div>
+
+        <div class="blast-emoji cake">🎂</div>
+        <div class="blast-emoji candle">🕯️</div>
+        <div class="blast-emoji chocolate">🍫</div>
+        <div class="blast-emoji gift">🎁</div>
+        <div class="blast-emoji balloon">🎈</div>
+        <div class="blast-emoji heart">💖</div>
+        <div class="blast-emoji star">✨</div>
+        <div class="blast-emoji confetti">🎉</div>
+
+        <div class="blast-center">
+            <div class="blast-ring"></div>
+
+            <div class="blast-title">
+                HAPPY<br>
+                BIRTHDAY
+                <span>MilliONE</span>
+            </div>
+
+            <div class="blast-subtitle">
+                17 looks dangerously good on you. 👑
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ======================================================
+         FINAL CONFETTI CONTAINER
+    ======================================================= -->
+    <div id="confettiContainer"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
